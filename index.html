@@ -49,17 +49,6 @@
         .streaming-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
         .stream-btn { background: var(--bg-card); border: 1px solid #333; padding: 0.7rem 1.2rem; font-size: 0.9rem; border-radius: 3px; transition: border-color 0.3s; }
         .stream-btn:hover { border-color: var(--accent); }
-        .tour-list { display: flex; flex-direction: column; gap: 1rem; }
-        .tour-item {
-            background: var(--bg-card); padding: 1.5rem; display: flex; justify-content: space-between; align-items: center;
-            flex-wrap: wrap; gap: 1rem; border-left: 3px solid transparent; transition: border-color 0.3s;
-        }
-        .tour-item:hover { border-left-color: var(--accent); }
-        .tour-date { font-family: var(--font-mono); color: var(--accent); font-weight: bold; min-width: 120px; }
-        .tour-venue { font-weight: bold; font-size: 1.1rem; }
-        .tour-city { color: var(--text-muted); }
-        .ticket-btn { border: 1px solid var(--text-main); padding: 0.5rem 1.2rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s; }
-        .ticket-btn:hover { background: var(--text-main); color: var(--bg-dark); }
         .about-text { font-size: 1.1rem; color: #d0d0d0; max-width: 800px; }
         .contact-box { background: var(--bg-card); padding: 2.5rem; border-radius: 4px; text-align: center; }
         .contact-box p { margin-bottom: 1.5rem; color: var(--text-muted); }
@@ -68,7 +57,6 @@
         .socials a:hover { color: var(--accent); }
         @media (max-width: 600px) {
             nav ul { gap: 1rem; }
-            .tour-item { flex-direction: column; align-items: flex-start; }
         }
     </style>
 </head>
@@ -78,7 +66,6 @@
         <nav>
             <ul>
                 <li><a href="#music">Music</a></li>
-                <li><a href="#tour">Tour</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -95,7 +82,6 @@
         <h2>Latest Release</h2>
         <div class="music-grid">
             <div>
-                <!-- Embedded Spotify Player for The Wall-Aces -->
                 <iframe class="spotify-embed" src="https://spotify.com" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
             <div>
@@ -104,41 +90,10 @@
                     Featuring "Modern Meets Old", "Little Bear", "The Long Road Home", and more. Produced independently from our bedroom studio.
                 </p>
                 <div class="streaming-links">
-                    <a href="https://open.spotify.com/artist/6DMwxB81asO4bB2lMx1KTD" target="_blank" class="stream-btn">Spotify</a>
-                    <!-- Replace the # below with your Bandcamp URL when ready -->
-                    <a href="https://thewall-aces.bandcamp.com" target="_blank" class="stream-btn">Bandcamp</a>
-                    <a href="https://www.youtube.com/channel/UCJ0NLD2CBZiwOqEluhbVFMA" target="_blank" class="stream-btn">YouTube</a>
+                    <a href="https://spotify.com" target="_blank" class="stream-btn">Spotify</a>
+                    <a href="https://bandcamp.com" target="_blank" class="stream-btn">Bandcamp</a>
+                    <a href="https://youtube.com" target="_blank" class="stream-btn">YouTube</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tour">
-        <h2>Upcoming Shows</h2>
-        <div class="tour-list">
-            <div class="tour-item">
-                <span class="tour-date">DEC 12, 2026</span>
-                <div>
-                    <div class="tour-venue">The Biltmore Cabaret</div>
-                    <div class="tour-city">Vancouver, BC</div>
-                </div>
-                <a href="#" class="ticket-btn">Tickets</a>
-            </div>
-            <div class="tour-item">
-                <span class="tour-date">DEC 18, 2026</span>
-                <div>
-                    <div class="tour-venue">The Horseshoe Tavern</div>
-                    <div class="tour-city">Toronto, ON</div>
-                </div>
-                <a href="#" class="ticket-btn">Tickets</a>
-            </div>
-            <div class="tour-item">
-                <span class="tour-date">JAN 09, 2027</span>
-                <div>
-                    <div class="tour-venue">Turbo Haüs</div>
-                    <div class="tour-city">Montreal, QC</div>
-                </div>
-                <a href="#" class="ticket-btn">Tickets</a>
             </div>
         </div>
     </section>
@@ -156,18 +111,18 @@
     </section>
 
     <section id="contact">
-        <h2>Booking & Press</h2>
+        <h2>Contact & Press</h2>
         <div class="contact-box">
-            <p>For show bookings, collaborations, or press inquiries:</p>
-            <a href="mailto:booking@thewallaces.ca" class="btn">booking@thewallaces.ca</a>
+            <p>For collaborations, press inquiries, or general messages:</p>
+            <a href="mailto:thewall.acesoffical@gmail.com" class="btn" style="text-transform: lowercase;">thewall.acesoffical@gmail.com</a>
         </div>
     </section>
 
     <footer>
         <div class="socials">
-            <a href="https://open.spotify.com/artist/6DMwxB81asO4bB2lMx1KTD" target="_blank">Spotify</a>
-            <a href="https://thewall-aces.bandcamp.com" target="_blank">Bandcamp</a>
-            <a href="https://www.youtube.com/channel/UCJ0NLD2CBZiwOqEluhbVFMA" target="_blank">YouTube</a>
+            <a href="https://spotify.com" target="_blank">Spotify</a>
+            <a href="https://bandcamp.com" target="_blank">Bandcamp</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
             <a href="#" target="_blank">Instagram</a>
         </div>
         <p>&copy; 2026 The Wall-Aces. All rights reserved. Proudly Independent in Canada.</p>
